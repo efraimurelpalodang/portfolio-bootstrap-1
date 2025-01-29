@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- jquery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#home">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-semibold me-5">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#about">Tentang Saya</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    
+    <!-- jumbotron start -->
+    <div class="py-5 bg-secondary jumbotron" id="home">
+      <div class="container text-center text-light">
+        <img src="img/profil.jpg" class="img-thumbnail shadow rounded-circle object-fit-cover" alt="profil">
+        <h1 class="pt-4 nama">Efraim urel palodang</h1>
+        <h3 class="fs-5">Mahasiswa | Web Developer</h3>
+      </div>
+    </div>
+    <!-- jumbotron end -->
+
+    <!-- about start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col-sm-12">
+            <h1 class="mt-5">About</h1> <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-sm-1 col-sm-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis aperiam consequuntur hic illo rem error numquam, vel eius consequatur nostrum veritatis deserunt.</p>
+          </div>
+          <div class="col-sm-5">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo et accusamus totam quae laboriosam explicabo nulla voluptatibus quam animi, fugit molestias amet repellat, expedita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- portfolio start -->
+    <section class="portfolio bg-secondary text-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <h1 class="mt-4">Portfolio</h1> <hr>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-4">
+            <a href="#">
+              <img src="img/1.jpg" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#">
+              <img src="img/2.png" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="thumbnail">
+              <img src="img/3.png" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="thumbnail">
+              <img src="img/4.png" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="thumbnail">
+              <img src="img/5.jpg" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#" class="thumbnail">
+              <img src="img/6.jpg" class="figure-img img-fluid rounded" alt="poto project">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- contact start -->
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-sm-12">
+            <h1 class="text-center">Contact</h1> <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <form action="">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="masukkan nama">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="telp" class="form-label">Nomor</label>
+                <input type="tel" class="form-control" id="telp" placeholder="masukkan nomor telepon">
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>pilih...</option>
+                  <option value="1">Web Design</option>
+                  <option value="2">Web Developer</option>
+                  <option value="3">Fullstack</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="komentar" class="form-label">Komentar</label>
+                <textarea class="form-control" id="komentar" rows="3" placeholder="Masukkan pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">kirim pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-secondary">
+      <div class="container text-center py-4">
+        <div class="row">
+          <div class="col-sm-12 text-light fs-5">
+            <p>&copy;Copyright 2025 buildin By <a href="#" class="text-warning text-decoration-none">Efraim urel palodang</a>.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#" class="btn btn-danger fw-semibold">SUBSCRIBE</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- jquery animate -->
+    <script src="js/jquery.easing.compatibility.js"></script>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+html {
+  position: relative;
+}
+section {
+  min-height: 460px;
+}
+.jumbotron .container,
+.about .container,
+.portfolio .container,
+.kontak .container
+{
+  padding-top: 4em;
+}
+.jumbotron img {
+  width: 200px;
+}
+.jumbotron h1.nama {
+  text-shadow: 2px 2px 10px black;
+}
+.jumbotron h3 {
+  text-shadow: 2px 2px 10px rgb(44, 41, 41);
+}
+.about hr,
+.portfolio hr,
+.kontak hr {
+  width: 180px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin: auto;
+}
+.portfolio hr {
+  border-color: white;
+}
+.portfolio a img {
+  margin-top: .5em;
+}
+.kontak {
+  min-height: 800px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
