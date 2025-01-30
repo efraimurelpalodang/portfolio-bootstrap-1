@@ -1,13 +1,13 @@
-$("nav .nav-link").click( function() {
+$(document).ready(function() {
+    $("nav a").click(function(e) {
+        // ambil isi href
+        const tujuan = $(this).attr('href');
+        const elementTujuan = $(tujuan);
+        
+          $('html, body').animate({
+              scrollTop: elementTujuan.offset().top - 50
+          }, 1500, 'easeInOutExpo');
 
-  // ambil isi href
-  const tujuan = $(this).attr('href');
-  // ambil element
-  const elementTujuan = $(tujuan);
-
-  // element scroll
-  $('body').animate({
-    scrollTop: elementTujuan.offset().too 
-  }, 1200, 'easeOutBounce')
-
+        e.preventDefault();
+    });
 });

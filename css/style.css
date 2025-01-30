@@ -4,11 +4,7 @@ html {
 section {
   min-height: 460px;
 }
-.jumbotron .container,
-.about .container,
-.portfolio .container,
-.kontak .container
-{
+.jumbotron .container {
   padding-top: 4em;
 }
 .jumbotron img {
