@@ -63,6 +63,49 @@ section {
   opacity: 1;
   transform: translate(0,0);
 }
+/* overlay */
+.portfolio .overlay {
+  & img {
+    transform: scale(0);
+    transition: .8s;
+  }
+  text-align: center;
+  padding: 80px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+  transition: .5s;
+}
+.portfolio .close {
+  position: absolute;
+  top: 30px;
+  right: 12rem;
+  opacity: 0;
+}
+.overlay .pindah {
+  opacity: 0;
+}
+.overlay:target {
+  & img {
+    transform: scale(1);
+  }
+  & .close {
+    animation: slideDownFade .5s .5s forwards;
+  }
+  & .pindah {
+    animation: fadePrev .5s .5s forwards;
+  }
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .9);
+}
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, .8);
+}
+
 .kontak {
   min-height: 800px;
 }
@@ -70,4 +113,23 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -25px;
+  } 100% {
+    margin-top: 0;
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes fadePrev {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
 }
